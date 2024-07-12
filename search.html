@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교촌 검색창</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        ul{list-style: none;}
+        a{text-decoration: none; color: black;}
+        .all{
+            width: 100%; height: 437px;
+            background-color: #ffcb44;
+            margin: 0 auto;
+        }
+        .all .all_gr{
+            overflow: hidden;
+            width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .all .all_gr .search{
+            float: left;
+            width: 600px;
+            height: 350px;
+            float: left;
+            margin: 50px auto;
+        }
+        .all .all_gr .search h1{
+            text-align: center;
+            width: 480px;
+            margin: 40px auto;
+        }
+        .all .all_gr .search form{
+            width: 480px;
+            margin:0 auto;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .all .all_gr .search form input{
+            width: 411px; height: 60px;
+            float: left;
+            outline:none;
+        }
+        .all .all_gr .search form img{
+            height: 64px; width: 65px;
+            float: left;
+        }
+        .all .all_gr .search .line{
+            width:480px; height: 1px;
+            background-color: white;
+            margin:0 auto;
+            margin-bottom: 30px;
+        }
+        .all .all_gr .search .addr ul{
+            overflow: hidden;
+            width: 480px;
+            margin: 0 auto;
+        }
+        .all .all_gr .search .addr li{
+            float: left;
+            font-size: 13pt;
+            line-height: 30px;
+            font-weight: bold;
+        }
+        .all .all_gr .search .addr li:nth-child(1){
+            margin-right: 10px;
+        }
+        .all .all_gr .search .addr li:nth-child(2){
+            width: 100px; height: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin-right: 10px;
+            border-radius: 30px;
+        }
+        .all .all_gr .search .addr li:nth-child(3){
+            width: 100px; height: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 30px;
+        }
+        .all .all_gr .search .number{
+            overflow: hidden;
+            width: 480px;
+            margin: 0 auto;
+        }
+        .all .all_gr .search .number li{
+            float: left;
+            margin-top: 10px;
+            margin-right: 10px;
+            font-size: 12px;
+        }
+        .all .all_gr .news{
+            width: 600px;
+            height: 350px;
+            float: left;
+            border-left: 1px solid #ffffff;
+            margin: 50px auto;
+            padding-left: 70px;
+            box-sizing: border-box;
+        }
+        .all .all_gr .news h1{
+            text-align: center;
+            width: 480px;
+            margin: 40px auto;
+        }
+        .all .news .newslist{
+            overflow: hidden;
+            line-height: 40px;
+        }
+        .all .news .newslist li a{
+            float: left;
+        }
+        .all .news .newslist li p{
+            float: right;
+            color: rgb(63, 63, 63);
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="all_gr">
+        <div class="search">
+            <h1 class="store">Store Search</h1>
+            <form>
+                <input type="text">
+                <img src="lu.png" alt="돋보기">
+            </form>
+            <p class="line"></p>
+            <div class="addr">
+                <ul>
+                    <li><a href="#"></a>교촌치킨 역삼1호점</li>
+                    <li><a href="#"></a>지도보기</li>
+                    <li><a href="#"></a>상세보기</li>
+                </ul>
+            </div>
+            <ul class="number">
+                <li>02-566-99422</li>
+                <li>|</li>
+                <li>서울특별시 강남구 역삼로14길 12(역삼동)</li>
+            </ul>
+        </div>
+        <div class="news">
+            <h1>Kyochon News</h1>
+            <ul class="newslist">
+                <li><a href="#">위치정보 이용약관 개정 안내 (24년 6월 17..</a>
+                    <p>2024-06-10</p>
+                </li>
+                <li><a href="#">개인정보보호법 개정안에 따른 휴면 정책 변경 안..</a>
+                    <p>2024-04-08</p>
+                </li>
+                <li><a href="#">위치정보 이용약관 개정 안내 (24년 1월 29..</a>
+                    <p>2024-01-22</p>
+                </li>
+                <li><a href="#">개인위치정보 처리방침 개정 안내 (24년 1월..</a>
+                    <p>2024-01-22</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

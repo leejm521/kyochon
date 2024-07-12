@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        ul{list-style: none;}
+        a{text-decoration:none; color:yellow;}
+        img{border:0;}
+        
+        #header:after{content: ""; display: block; clear: both;}
+        
+        #wrap{
+            width: 100%; height: 50px;
+            background-color: #5a0404;
+            position: absolute;
+            left:0; top:0;
+            transition: all 0.2s;
+            overflow: hidden;
+        }
+        #wrap:hover{
+            height: 200px;
+        }
+        
+        #header{
+            width: 1000px; margin: 0 auto;
+            background-color: #5a0404; height: 50px; 
+            line-height: 40px;
+        }
+        #header .nav{position: absolute;}
+        #header .nav>li{
+            float:left; width: 250px; 
+        }
+        #header .nav>li>a{
+            display: block; padding:5px 0; text-align: center; font-size:1.1em;
+        }
+        
+        #header .nav>li:hover>a{color:#f5b849;}
+        
+        
+        #header .nav:hover{
+/*            background-color: #5a0404;*/
+        }
+        #header .nav ul{display: none;}
+        #header .nav:hover ul{
+            display: block; text-align: center; line-height: 40px;            
+        }
+        #header .nav ul li:hover{
+            background-color: rgba(255, 209, 163, 0.76);
+        }
+        
+        #section{
+            width: 1000px; margin: 0 auto;
+        }
+        #section .banner{margin-top: 80px;}
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <ul class="nav">
+            <li><a href="#">프로모션</a>
+                <ul>
+                    <li><a href="#">TV/CF</a></li>
+                    <li><a href="#">옥외광고</a></li>
+                </ul>
+            </li> 
+            <li><a href="#">서비스</a>
+                <ul>
+                    <li><a href="#">HTML5</a></li>
+                    <li><a href="#">CSS3</a></li>
+                    <li><a href="#">JAVASCRIPT</a></li>
+                </ul>
+            </li> 
+            <li><a href="#">소 개</a>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </li> 
+            <li><a href="#">고객센터</a>
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">질문답변</a></li>
+                </ul>
+            </li> 
+        </ul>
+    </div>
+</div>    
+    <div id="section">
+        <div class="banner">
+            <img src="bann.jpg" width="1000">
+        </div>
+
+        <div class="display">
+            <img src="http://placehold.it/1000X600">
+            <img src="http://placehold.it/1000X600">
+            <img src="http://placehold.it/1000X600">
+        </div> 
+    </div>
+    <div id="footer"></div>
+
+</body>
+</html>
